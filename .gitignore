@@ -1,0 +1,25 @@
+## Visual Studio temp folders
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+## Build output
+bin/
+obj/
+Debug/
+Release/
+
+## Logs
+*.log
+
+## OS generated files
+Thumbs.db
+.DS_Store
+
+## Rider
+.idea/
+
+## Publish
+wwwroot/lib/
