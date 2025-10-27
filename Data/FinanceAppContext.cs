@@ -9,6 +9,6 @@ namespace FinanceApp.Data
         {
         }
 
-        DbSet<Expense> Expenses { get; set; } = default!;
+        public DbSet<Expense> Expenses { get; set; } = default!;
     }
 }
