@@ -1,4 +1,5 @@
 ﻿using FinanceApp.Data;
+using FinanceApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinanceApp.Controllers
@@ -18,6 +19,17 @@ namespace FinanceApp.Controllers
         }
         public IActionResult Create()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Expense expense)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Expenses.Add(expense);
+
+            }
             return View();
         }
     }
