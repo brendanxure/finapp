@@ -4,6 +4,11 @@ namespace FinanceApp.Data.Service
 {
     public class ExpensesService : IExpensesService
     {
+        private readonly FinanceAppContext _context;
+        public ExpensesService(FinanceAppContext context)
+        {
+            _context = context;
+        }
         public Task Add(Expense expense)
         {
             throw new NotImplementedException();
